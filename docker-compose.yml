@@ -1,7 +1,7 @@
 version: "2"
 services:
   resume:
-    image: "node:latest"
+    image: "repo.1000m.xin/public/node:latest"
     container_name: "resume"
     user: "root"
     working_dir: /home/node/app
@@ -10,7 +10,7 @@ services:
     ports:
       - "8081:8080"
     command: "npm run dev"
-networks:
-  default:
-    external:
-      name: harbor_harbor
+#networks:
+ # default:
+   # external:
+   #   name: network
